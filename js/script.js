@@ -13,4 +13,14 @@ $(document).ready(function() {
     $("#story").show();
     event.preventDefault();
   });
+
+    $("#formTwo").submit(function(event) {
+      var wordInput = $("input#word").val();
+      var upperWord = wordInput.toUpperCase();
+
+      $(".word").text(upperWord);
+
+      $("#return").show();
+      event.preventDefault();
+    });
 });
